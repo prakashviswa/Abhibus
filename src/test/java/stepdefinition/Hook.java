@@ -11,17 +11,19 @@ public class Hook {
 
 	@Before()
 	public static void beforeMethod() {
-		System.out.println("before method");
+		
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Users\\teslaram\\seleniumNewWork\\SeleniumStartUp\\Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		System.out.println("before method");
 	}
 
 	@After
 	public static void afterMethod() {
+		System.out.println("after method");
 		driver.close();
 		driver.quit();
-		System.out.println("after method");
+		
 	}
 }

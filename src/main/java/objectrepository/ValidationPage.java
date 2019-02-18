@@ -11,7 +11,7 @@ public class ValidationPage {
 		PageFactory.initElements(Hook.driver, this);
 	}
 
-	@FindBy(id = "SubHeadJrney")
+	@FindBy(id="SubHeadJrney")
 	private WebElement validation_Page;
 
 	public WebElement getValidation_Page() {

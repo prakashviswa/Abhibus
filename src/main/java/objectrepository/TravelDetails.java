@@ -17,13 +17,13 @@ public class TravelDetails {
 	@FindBy(id = "destination")
 	private WebElement going_To;
 
-	@FindBy(name = "journey_date")
+	@FindBy(id = "datepicker1")
 	private WebElement journey_Click;
 
-	@FindBy(xpath = "//h4[text()='Tomorrow']")
+	@FindBy(xpath="//div[@id=\"tomorrowdiv\"]")
 	private WebElement journey_Date;
 
-	@FindBy(id = "//a[@title='Search Buses']")
+	@FindBy(xpath="//a[@title='Search Buses']")
 	private WebElement search_Button;
 
 	public WebElement getFrom_src() {
@@ -45,5 +45,21 @@ public class TravelDetails {
 	public WebElement getSearch_Button() {
 		return search_Button;
 	}
+	
+	
+	@FindBy(id="datepicker2")
+	private WebElement returnDate_Click;
+	
+	@FindBy(xpath="//a[text()='27']")
+	private WebElement return_Date;
 
+	public WebElement getReturnDate_Click() {
+		return returnDate_Click;
+	}
+
+	public WebElement getReturn_Date() {
+		return return_Date;
+	}
+
+	
 }

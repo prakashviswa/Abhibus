@@ -9,6 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "features//abhibus.feature", glue = { "stepdefinition" }, plugin = {
 		"html:target" }, monochrome = true, dryRun = false)
 
-public class TestRunner {
+public class TestRunnerOneWay {
 
+	
 }
